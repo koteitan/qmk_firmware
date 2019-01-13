@@ -1,3 +1,16 @@
+.PHONY: mint60 helix/pico
+
+mint60:
+	make mint60:mymap
+	make mint60:mymap:avrdude
+	make mint60:mymap:avrdude
+
+helix/pico:
+	make helix/pico:mymap
+	make helix/pico:mymap:avrdude
+	make helix/pico:mymap:avrdude
+
+
 ifndef VERBOSE
 .SILENT:
 endif
