@@ -1,1 +1,1 @@
-DEFAULT_FOLDER = omkbd/ergodash/rev1
+DEFAULT_FOLDER = omkbd/ergodash/mini

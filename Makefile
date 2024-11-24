@@ -1,3 +1,7 @@
+.PHONY: install
+install:omkbd_ergodash_mini_koteitan.hex
+	cp omkbd_ergodash_mini_koteitan.hex /mnt/c/diykbd/omkbd_ergodash_mini_koteitan.hex
+
 ifndef VERBOSE
 .SILENT:
 endif
