@@ -1,4 +1,8 @@
 .PHONY: install
+
+.DEFAULT_GOAL := omkbd/ergodash/mini:koteitan
+
+# copy hex file to the windows directory
 install:omkbd_ergodash_mini_koteitan.hex
 	cp omkbd_ergodash_mini_koteitan.hex /mnt/c/diykbd/omkbd_ergodash_mini_koteitan.hex
 
@@ -66,9 +70,6 @@ include paths.mk
 
 TEST_OUTPUT_DIR := $(BUILD_DIR)/test
 ERROR_FILE := $(BUILD_DIR)/error_occurred
-
-.DEFAULT_GOAL := all:all
-
 
 # Compare the start of the RULE variable with the first argument($1)
 # If the rules equals $1 or starts with $1:, RULE_FOUND is set to true
